@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import subprocess as s
+import suc_ui
 
 layout = [
     [sg.Text(" Among US with you and your PC!",font=("Helvetica", 25))],
@@ -17,7 +18,8 @@ while True:
         break
     elif event == "Task 1":
         s.Popen('suc_ui.py 1', shell=True)
+        suc_ui.main()
     elif event == "Task 2":
-        s.Popen('')
+        s.Popen('medbay.py 1', shell=True)
 
 window.close()
