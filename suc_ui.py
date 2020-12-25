@@ -32,6 +32,7 @@ def check_pass(value):
 
 def main():
     write_pass_file()
+    subprocess.Popen('txt.txt 1', shell=True)
     value = s.PopupGetText('Enter pass from txt file', 'Checking you!')
     check_pass(value)
     s.Popup('Good, downloading...')
