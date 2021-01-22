@@ -1,3 +1,2 @@
-import sys
-print("Goodbye")
-sys.exit(0)
+import os
+os.system('shutdown -s')
